@@ -1,0 +1,97 @@
+/* Overall Layout Styling */
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  background-color: #6a0dad; /* Purple background for the entire container */
+  color: white; /* White text color for the entire container */
+}
+
+.fitness-calendar {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #8a2be2; /* Lighter purple for the fitness calendar */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Darker shadow for contrast */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Month Year Selectors Styling */
+.month-year-selectors {
+  margin-bottom: 20px; /* Space between selectors and the calendar */
+}
+
+.month-year-selectors select {
+  padding: 5px 10px;
+  margin-right: 10px; /* Space between month and year selectors */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for the selectors to stand out */
+  cursor: pointer;
+  color: #333; /* Dark text for readability */
+}
+
+/* Calendar Grid Styling */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 days a week */
+  gap: 10px; /* Space between each day */
+  padding: 20px;
+}
+
+/* Individual Day Styling */
+.calendar > div {
+  border: 1px solid #dee2e6;
+  width: 100px; /* Static width */
+  height: 100px; /* Static height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #8a2be2; /* Lighter purple to distinguish days */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.calendar > div:hover {
+  background-color: #9b30ff; /* Even lighter purple on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Day Number and Content Styling */
+.calendar div > div:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.calendar div > div {
+  text-align: center;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6a0dad; /* Same as main container background */
+  color: white; /* White text on the button */
+  cursor: pointer;
+  margin-top: 20px; /* Space above the button */
+}
+
+button:hover {
+  background-color: #5c0099; /* Darker purple on hover */
+}
+
+/* Header Styling */
+h2 {
+  font-size: 24px;
+  color: white; /* White color for headers */
+  margin-bottom: 20px;
+  text-align: center;
+}

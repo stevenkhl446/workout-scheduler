@@ -1,0 +1,14 @@
+button {
+  cursor: pointer;
+  margin-bottom: 20px; /* Space between button and the rest */
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #490cf1; /* Bootstrap primary blue or your choice */
+  color: rgb(255, 255, 255);
+}
+
+button:hover {
+  background-color: #252929; /* Darker blue on hover */
+}
+

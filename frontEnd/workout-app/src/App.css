@@ -1,0 +1,20 @@
+:root {
+  --background-day: #f8f9fa;
+  --background-night: #333;
+  --text-color-day: #000000;
+  --text-color-night: #ffffff;
+  --link-color-day: #007bff;
+  --link-color-night: #4e9af1;
+  --border-color-day: #dee2e6;
+  --border-color-night: #555;
+}
+
+.daily-schedule-container {
+  background-color: var(--background-day);
+  color: var(--text-color-day);
+  /* Other styles remain the same */
+}
+
+.workout-link {
+  color: var(--link-color-day);
+}

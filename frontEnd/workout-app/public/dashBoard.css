@@ -1,0 +1,58 @@
+.fitness-calendar {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 1000px; /* Adjusted for wider calendar */
+  margin: auto;
+  background-color: #f8f9fa; /* Light background for the whole calendar */
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 days in a week */
+  gap: 10px;
+  padding: 20px;
+}
+
+.day {
+  border: 1px solid #dee2e6; /* Light grey border */
+  min-height: 120px; /* Adjusted height */
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* Align content to the top */
+  padding: 10px;
+  position: relative; /* For positioning the day number */
+  background-color: #ffffff; /* White background for day cells */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.day:hover {
+  background-color: #e9ecef; /* Slightly darker on hover */
+}
+
+.day-number {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-weight: bold;
+  color: #6c757d; /* Muted color for the day number */
+}
+
+.workout-link {
+  margin-top: 5px;
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  overflow: hidden; /* Ensure long text doesn't overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+  display: block; /* Make links block to occupy full width */
+  white-space: nowrap; /* Keep the link text in a single line */
+}
+
+.workout-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white;
+}
